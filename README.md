@@ -101,6 +101,8 @@ public boolean equals(Object obj) {
 Сперва сравниват объект с самим собой -> проверяет является ли объект экземпляром класса Coordinate 
 -> если да, то сравниваем по x и y, если нет, то объекты разные(нельзя их сравнить) => возвращаем false
 
+![Coordinate](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Coordinate1.png)
+
 ## Класс ImmutableListofValues
 ### Назначение:
 Класс описывает обертку над массивом целых чисел 
@@ -145,6 +147,8 @@ public boolean equals(Object obj) {
 Описание задания не давало конкретный ответ на вопрос: изменяемый массив или нет.
 Поэтому было принято решение - в set возвращать копию массива, в котором изменялся нужный эл-нт.
 
+![ImmutableListofValues](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/ImmutableListofValues1.png)
+
 #### Остальные методы
 
 - isEmpty() - проверка на пустоту.
@@ -167,6 +171,8 @@ public boolean equals(Object obj) {
 если > 164, то floor = 1
 - Автоматическое определение правильного окончания для слова "этаж"
 
+![House](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/House1.png)
+![House](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/House2.png)
 
 Подробнее с описанием этого класса можно ознакомиться в отчете предыдущей лабораторной работы:
 
@@ -208,6 +214,8 @@ https://github.com/MineMoon/JavaLab2
 ```
 
 **Примечание**: метод power можно использовать **не создавая** объект класса Calculator.
+
+![Pow](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Pow1.png)
 
 # Пакет weapon + класс Gun
 ## Абстрактный класс Weapon
@@ -306,6 +314,8 @@ public Gun copy() {
 }
 ```
 
+![Gun](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Gun1.png)
+
 ## Класс Rifle
 Наследуется от абстрактоного Gun, также имплиментируется от интерфейса Copyable
 ### Назначение
@@ -356,6 +366,8 @@ output:
 ```
 
 - toString() - возвращает иформацию об автомате.
+
+![Rifle](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Rifle1.png)
 
 # Пакет person
 ## Класс Shooter
@@ -448,6 +460,8 @@ public void shoot(int sec){
 (то есть было наследуемо от класса Gun).
 -toString() - возращает информацию о стрелке
 
+![Person](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Shooter1.png)
+
 # Пакет main
 Содержит Main.java - точка входа в программу и класс Gun.
 **Примечание:** класс Gun был перемещен из пакета weapon в пакет main по заданию.
@@ -458,8 +472,15 @@ public void shoot(int sec){
 - `inputDiaposonInt()` - ввод числа в диапазоне
 - `inputChoiceInt()` - ввод выбора из меню
 - `inputString()` - ввод строки
+
+![UserInput](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Input1.png)
+![UserInput](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Input2.png)
+![UserInput](https://github.com/MineMoon/JavaLab3/blob/main/PNGFR/Input3.png)
+  
 ## Класс Check
 Содержит методы валидации:
 - `isInteger(String str)` - проверка целого числа
 - `Positive(int num)` - проверка неотрицательности
+
+
 
